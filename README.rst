@@ -1,3 +1,6 @@
+*This is a fork that's used for a very specific purpose: to manage multiple versions of DRF 
+in the same project. If you're not doing that, this repo probably isn't useful for you.*
+
 Django Rest Framework HStore
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -55,11 +58,11 @@ This field is not sufficient to support **django-hstore** ``schema-mode``.
 
 .. code-block:: python
 
-    from rest_framework import serializers
+    from rest_framework_3 import serializers
     from myapp.models import MyModel
 
-    # rest_framework_hstore
-    from rest_framework_hstore.fields import HStoreField
+    # rest_framework_hstore_121
+    from rest_framework_hstore_121.fields import HStoreField
 
     class MyHStoreSerializer(serializers.ModelSerializer):
         data = HStoreField()
@@ -79,8 +82,8 @@ Prefer this to ``HStoreField``.
 
     from myapp.models import MyModel
 
-    # rest_framework_hstore
-    from rest_framework_hstore.serializers import HStoreSerializer
+    # rest_framework_hstore_121
+    from rest_framework_hstore_121.serializers import HStoreSerializer
 
     class MyHStoreSerializer(HStoreSerializer):
         class Meta:
