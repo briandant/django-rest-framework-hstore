@@ -4,7 +4,7 @@
 from setuptools import setup
 import os
 import sys
-from rest_framework_hstore import get_version
+from rest_framework_hstore_121 import get_version
 
 
 def get_install_requires():
@@ -21,8 +21,8 @@ def get_install_requires():
     return requirements
 
 
-name = 'djangorestframework-hstore'
-package = 'rest_framework_hstore'
+name = 'djangorestframework-hstore-121'
+package = 'rest_framework_hstore_121'
 description = 'Django Rest Framework tools for django-hstore'
 url = 'https://github.com/djangonauts/django-rest-framework-hstore'
 download_url = 'https://github.com/djangonauts/django-rest-framework-hstore/releases'

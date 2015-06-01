@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
 
-from rest_framework.fields import Field
+from rest_framework_3.fields import Field
 
 from django_hstore.dict import HStoreDict
 from django_hstore.exceptions import HStoreDictException
